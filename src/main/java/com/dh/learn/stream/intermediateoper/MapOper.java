@@ -11,6 +11,9 @@ import java.util.List;
 public class MapOper {
 	
 	public static void main(String[] args) {
+		List<Integer> words1 = Arrays.asList(1,2,3,4);
+		words1.stream().map(x -> x+1).forEach(System.out::println);
+		
 		List<String> words = Arrays.asList("hello", "world");
 		words.stream()
 		.map(w -> Arrays.stream(w.split("")))    //[[h,e,l,l,o],[w,o,r,l,d]]
